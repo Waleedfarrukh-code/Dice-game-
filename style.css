@@ -127,3 +127,104 @@ img {
     font-size: 48px;
 }
 }
+
+.leaderboardmodel{
+    height: 100%;
+    width:  100%;
+    background-color: rgb(0, 0, 0 ,0.8);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#leaderboardbtn{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 10px 10px ;
+}
+
+.model ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.model ul li {
+    padding: 12px 15px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.model ul li span {
+    color: #b3282f;
+}
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 600px) {
+    .model {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #hending {
+        font-size: 25px;
+    }
+
+    .model ul li {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+.modleoff{
+    display: none;
+}
+/* ==== Modal Box ==== */
+.model {
+    width: 60%;
+    max-width: 600px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+
+    animation: pop 0.3s ease;
+}
+
+/* pop animation */
+@keyframes pop {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
