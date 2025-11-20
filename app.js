@@ -80,7 +80,7 @@ function switchTurn() {
 
 // ---------- CHECK WINNER ----------
 function checkWinner() {
-    if (TotalScorePlayer1 >= 10) { // Change to 100 for real game
+    if (TotalScorePlayer1 >= 100) { // Change to 100 for real game
         winSound.play();
         setTimeout(() => {
             alert(`${playerName1.textContent} Wins 🎉 (Score: ${TotalScorePlayer1})`);
@@ -89,7 +89,7 @@ function checkWinner() {
             resetGame();
         }, 300);
     }
-    if (TotalScorePlayer2 >= 10) {
+    if (TotalScorePlayer2 >= 100) {
         winSound.play();
         setTimeout(() => {
             alert(`${playerName2.textContent} Wins 🎉 (Score: ${TotalScorePlayer2})`);
